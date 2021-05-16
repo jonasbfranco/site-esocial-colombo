@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="assets/js/a076d05399.js"></script>
     <title>Pagina Informativa eSocial - Interna</title>
@@ -22,8 +22,8 @@
             <label class="logo">TI - eSocial</label>
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="gov.html">Governo</a></li>
                 <li><a href="doc.html">Documentos</a></li>
+                <li><a href="sites.html">Sites</a></li>
                 <li><a href="ticket.html">Chamados</a></li>
             </ul>
         </div>
@@ -38,7 +38,7 @@
 
             <!-- Imagem eSocial -->
             <div class="img-home">
-                <img src="assets/img/esocial.jpg" alt="esocial">
+                <img src="./assets/img/esocial.jpg" loading="lazy" alt="esocial">
             </div>
 
             <div>
@@ -68,6 +68,24 @@
 
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- Loader Spinner -->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery-2.1.4.js"></script>
+
+
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+
 </body>
 </html>

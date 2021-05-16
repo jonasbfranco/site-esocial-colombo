@@ -23,8 +23,8 @@
             <label class="logo">TI - eSocial</label>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="gov.html">Governo</a></li>
                 <li><a href="doc.html">Documentos</a></li>
+                <li><a href="sites.html">Sites</a></li>
                 <li><a href="ticket.html">Chamados</a></li>
             </ul>
         </div>
@@ -72,7 +72,27 @@
 
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    
+    <!-- Loader Spinner -->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery-2.1.4.js"></script>
+
+
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+
+
+
 </body>
 </html>
 
