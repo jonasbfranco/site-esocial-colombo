@@ -156,7 +156,7 @@ p.texto-doc {
 
 .link-fa {
     display: flex;
-    justify-content: right;
+    justify-content: left;
     align-items: center;
 }
 
